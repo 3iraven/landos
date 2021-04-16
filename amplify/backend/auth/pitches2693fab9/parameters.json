@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "todod2955b53_identitypool_d2955b53",
+    "identityPoolName": "pitches2693fab9_identitypool_2693fab9",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "todod2955b53",
-    "userPoolName": "todod2955b53_userpool_d2955b53",
+    "resourceNameTruncated": "pitche2693fab9",
+    "userPoolName": "pitches2693fab9_userpool_2693fab9",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -20,7 +20,7 @@
     "requiredAttributes": [
         "email"
     ],
-    "userpoolClientGenerateSecret": true,
+    "userpoolClientGenerateSecret": false,
     "userpoolClientRefreshTokenValidity": 30,
     "userpoolClientWriteAttributes": [
         "email"
@@ -28,9 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "todod2d2955b53_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "pitche2693fab9_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "resourceName": "todod2955b53",
+    "sharedId": "2693fab9",
+    "resourceName": "pitches2693fab9",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -45,21 +46,8 @@
         ]
     },
     "useDefault": "default",
-    "triggers": "{\"CustomMessage\":[\"verification-link\"]}",
-    "verificationBucketName": "todod2955b53verificationbucket",
-    "parentStack": {
-        "Ref": "AWS::StackId"
-    },
-    "permissions": [],
-    "dependsOn": [
-        {
-            "category": "function",
-            "resourceName": "todod2955b53CustomMessage",
-            "triggerProvider": "Cognito",
-            "attributes": [
-                "Arn",
-                "Name"
-            ]
-        }
-    ]
+    "userPoolGroupList": [],
+    "serviceName": "Cognito",
+    "usernameCaseSensitive": false,
+    "dependsOn": []
 }
